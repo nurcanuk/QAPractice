@@ -15,6 +15,7 @@ public class DemoClass {
     public void name() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
+
         driver.get("https://demoqa.com/elements");
 
         driver.manage().window().maximize();
@@ -25,6 +26,7 @@ public class DemoClass {
 
         System.out.println("Current URL = " + driver.getCurrentUrl());
         System.out.println("title = " + driver.getTitle());
+
 
 
     }
