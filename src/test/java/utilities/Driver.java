@@ -9,7 +9,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.opera.OperaDriver;
+
 import org.openqa.selenium.safari.SafariDriver;
 
 public class Driver {
@@ -56,12 +56,12 @@ public class Driver {
                     driver = new EdgeDriver();
                     break;
 
-                case "opera":
-                    if (!System.getProperty("os.name").toLowerCase().contains("mac"))
-                        throw new WebDriverException("Your OS doesn't support Opera");
-                    WebDriverManager.operadriver().setup();
-                    driver = new OperaDriver();
-                    break;
+//                case "opera":
+//                    if (!System.getProperty("os.name").toLowerCase().contains("mac"))
+//                        throw new WebDriverException("Your OS doesn't support Opera");
+//                    WebDriverManager.operadriver().setup();
+//                    driver = new OperaDriver();
+//                    break;
 
                 case "safari":
                     if (!System.getProperty("os.name").toLowerCase().contains("mac"))
