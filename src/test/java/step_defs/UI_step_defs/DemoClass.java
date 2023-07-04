@@ -27,7 +27,7 @@ public class DemoClass {
         System.out.println("Current URL = " + driver.getCurrentUrl());
         System.out.println("title = " + driver.getTitle());
 
-
+        System.out.println();
 
     }
 
