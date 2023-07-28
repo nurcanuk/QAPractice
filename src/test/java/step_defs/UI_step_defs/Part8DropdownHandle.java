@@ -59,6 +59,8 @@ public class Part8DropdownHandle {
     }
     @Test
     public void bootstrapDropdown(){
+        //It is a dropdown, every option represent with <a> tag
+
 
     }
     @Test

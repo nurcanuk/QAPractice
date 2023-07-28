@@ -121,7 +121,7 @@ dropdownDemoQA.selectValue.click();
 
     @After
     public void tearDown() {
-        //Driver.closeDriver();
+        Driver.closeDriver();
 
     }
 }
