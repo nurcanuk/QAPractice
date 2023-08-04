@@ -1,5 +1,6 @@
 package pages;
 
+import org.bouncycastle.jcajce.provider.asymmetric.X509;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -50,6 +51,11 @@ public class DropdownDemoQA {
     @FindBy(xpath = "//*[@class=\" css-1s9izoc\"]//div//div")
     public List<WebElement> selectOnesTable;
 
+    @FindBy(id = "twotabsearchtextbox")
+    public WebElement amazonInputBox;
+    @FindBy(xpath = "//div[@class='s-suggestion-container']/div/span")
+    public List<WebElement> autoSuggestions;
+
 
 
     public static void randomDRPSelection(WebElement element, int limit) {
@@ -71,5 +77,11 @@ public class DropdownDemoQA {
         actions.sendKeys(Keys.ENTER).perform();
         actions.sendKeys(Keys.ESCAPE).perform();
     }
+    @FindBy(id = "searchbox")
+    public WebElement searchBox;
+
+    @FindBy(id = "ui-id-945")
+    public WebElement aust;
+
 
 }

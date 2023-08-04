@@ -1,5 +1,5 @@
-video 9: Abdullah Bey
-video 10: Havva Hn
-video 11:Nurcan Hoca
-video 12:Bunyamin Hoca
-video 13:Serpil
+Abdullah Bey = 17
+Havva Hn = 18
+Nurcan Hoca = 16
+Bunyamin Hoca = 14-15
+Serpil = 13

@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.DropdownDemoQA;
@@ -13,6 +14,7 @@ import utilities.Driver;
 
 import javax.swing.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DropdownTest {
@@ -84,10 +86,11 @@ public class DropdownTest {
 
 
     }
+
     @Test
     public void selectValueTest() {
 
-dropdownDemoQA.selectValue.click();
+        dropdownDemoQA.selectValue.click();
         BrowserUtils.wait(5);
 
         for (WebElement eachName : dropdownDemoQA.groupsNames) {
@@ -99,8 +102,8 @@ dropdownDemoQA.selectValue.click();
     @Test
     public void selectOneTest() {
 
-            dropdownDemoQA.clickSelectOne.click();
-            List<WebElement>  list = dropdownDemoQA.selectOnesTable;
+        dropdownDemoQA.clickSelectOne.click();
+        List<WebElement> list = dropdownDemoQA.selectOnesTable;
 
         for (WebElement eachOptions : list) {
             System.out.println(eachOptions.getText());
@@ -110,8 +113,9 @@ dropdownDemoQA.selectValue.click();
         //DropdownDemoQA.randomDRPSelection(dropdownDemoQA.clickSelectOne,5);
 
     }
+
     @Test
-    public void multiSelect(){
+    public void multiSelect() {
 
         dropdownDemoQA.multiSelectDropdown.click();
         for (WebElement eachOption : dropdownDemoQA.multiSelectOptions) {
@@ -119,9 +123,17 @@ dropdownDemoQA.selectValue.click();
         }
     }
 
+    @Test
+    public void multiSelectDropdown() {
+        dropdownDemoQA.multiSelectDropdown.click();
+        BrowserUtils.selectValuesFromDropdown(dropdownDemoQA.multiSelectOptions,"Green","Black","Blue","Red");
+
+    }
+
+
+
     @After
     public void tearDown() {
-        //Driver.closeDriver();
-
+      //Driver.closeDriver();
     }
 }

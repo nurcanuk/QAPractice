@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import pages.DropdownDemoQA;
 import pages.Part8DropdownPage;
 import utilities.BrowserUtils;
 import utilities.ConfigurationReader;
@@ -13,6 +14,7 @@ import java.util.List;
 
 public class Part8DropdownHandle {
     Part8DropdownPage part8DropdownPage = new Part8DropdownPage();
+    DropdownDemoQA dropdownDemoQA = new DropdownDemoQA();
 
     @Test
     public void countriesNames() {
@@ -63,6 +65,9 @@ public class Part8DropdownHandle {
     }
     @Test
     public void jqueryDropdown(){
+
+
+
 
     }
 }

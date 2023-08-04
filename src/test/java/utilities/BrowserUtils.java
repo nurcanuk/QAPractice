@@ -858,7 +858,37 @@ public class BrowserUtils {
     //this method will clear text box
     public static void cleanTextInBox2(WebElement element) {
         element.sendKeys(Keys.chord(Keys.CONTROL, "a") + Keys.BACK_SPACE);
+
     }
+
+    //this method will select one or more options from a dropdown
+    public static void selectValuesFromDropdown(List<WebElement> dropdownOptions, String... options){
+
+        for (WebElement item: dropdownOptions){
+
+            String text = item.getText();
+
+            for(String option : options){
+
+                if (text.equals(option)){
+
+                    item.click();
+
+                    break;
+                }
+            }
+        }
+
+    }
+
+
+
+
+
+
+
+
+
 
 
 }
