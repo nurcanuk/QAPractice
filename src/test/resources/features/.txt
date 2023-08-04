@@ -1,5 +1,5 @@
-Abdullah Bey = 17
-Havva Hn = 18
-Nurcan Hoca = 16
-Bunyamin Hoca = 14-15
-Serpil = 13
+Abdullah Bey = 18
+Havva Hn = 19
+Nurcan Hoca = 17
+Bunyamin Hoca = 15-16
+Serpil = 14
